@@ -24,6 +24,7 @@ hexo g -d
 # algolia
 export HEXO_ALGOLIA_INDEXING_KEY=d3e6a74afaebeb6b9c3a26eee410f08e
 echo $HEXO_ALGOLIA_INDEXING_KEY
-./node_modules/.bin/hexo algolia
+cd ./node_modules/.bin/
+hexo algolia
 
 echo ::set-output name=notify::"Deploy complate."
