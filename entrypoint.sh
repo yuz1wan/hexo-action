@@ -13,9 +13,11 @@ git config --global user.name "$INPUT_USER_NAME"
 git config --global user.email "$INPUT_USER_EMAIL"
 
 # install hexo env
+hexo -v
 npm install hexo-cli -g
 npm install hexo-deployer-git --save
 npm install hexo-algolia --save
+hexo -v
 
 # deployment
 hexo g -d
