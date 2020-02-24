@@ -17,7 +17,7 @@ npm install hexo-cli -g
 hexo -v
 npm install hexo-deployer-git --save
 npm install hexo-algolia --save
-hexo -v
+cat package.json
 
 # deployment
 hexo g -d
