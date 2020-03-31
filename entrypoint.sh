@@ -21,7 +21,8 @@ npm install hexo-algolia --save
 cat package.json
 
 # deployment
-cd /home/runner/work/HexoBlog/HexoBlog
+# pwd
+# cd /home/runner/work/HexoBlog/HexoBlog
 pwd
 ls
 git clone https://github.com/deppwang/deppwang.github.io.git .deploy_git
