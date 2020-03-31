@@ -22,15 +22,11 @@ cat package.json
 
 # deployment
 cd /home/runner/work/HexoBlog/HexoBlog
-git clone --depth 1 --branch=master https://github.com/deppwang/deppwang.github.io.git .deploy_git
-cd .deploy_git
+pwd
+ls
+git clone https://github.com/deppwang/deppwang.github.io.git .deploy_git
 
-find . -path ./.git -prune -o -exec rm -rf {} \; 2> /dev/null
-cd ../
-if [ ! -d "./public" ]; then
-  hexo generate
-fi
-hexo d
+hexo g -d
 
 # algolia
 export HEXO_ALGOLIA_INDEXING_KEY=d3e6a74afaebeb6b9c3a26eee410f08e
