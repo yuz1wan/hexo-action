@@ -24,9 +24,9 @@ cat package.json
 # pwd
 # cd /home/runner/work/HexoBlog/HexoBlog
 pwd
-ls
+ls -a
 git clone https://github.com/deppwang/deppwang.github.io.git .deploy_git
-
+ls -a
 hexo g -d
 
 # algolia
