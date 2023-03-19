@@ -27,6 +27,7 @@ pwd
 ls -a
 git clone https://github.com/deppwang/deppwang.github.io.git .deploy_git
 ls -a
+rm -rf node_modules && npm install --force
 hexo g -d
 
 # algolia
