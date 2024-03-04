@@ -31,8 +31,8 @@ ls -a
 hexo g -d
 
 # algolia
-export HEXO_ALGOLIA_INDEXING_KEY=d3e6a74afaebeb6b9c3a26eee410f08e
-echo $HEXO_ALGOLIA_INDEXING_KEY
-hexo algolia --flush true
+# export HEXO_ALGOLIA_INDEXING_KEY=d3e6a74afaebeb6b9c3a26eee410f08e
+# echo $HEXO_ALGOLIA_INDEXING_KEY
+# hexo algolia --flush true
 
 echo ::set-output name=notify::"Deploy complate."
