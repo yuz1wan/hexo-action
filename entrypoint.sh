@@ -12,7 +12,7 @@ ssh-keyscan -t rsa e.coding.net >> /root/.ssh/known_hosts
 # setup deploy git account
 git config --global user.name "$INPUT_USER_NAME"
 git config --global user.email "$INPUT_USER_EMAIL"
-
+rm -rf node_modules && npm install --force
 # install hexo env
 npm install hexo-cli -g
 hexo -v
@@ -27,7 +27,7 @@ pwd
 ls -a
 git clone https://github.com/deppwang/deppwang.github.io.git .deploy_git
 ls -a
-rm -rf node_modules && npm install --force
+
 hexo g -d
 
 # algolia
