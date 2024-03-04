@@ -25,7 +25,7 @@ cat package.json
 # cd /home/runner/work/HexoBlog/HexoBlog
 pwd
 ls -a
-git clone https://github.com/deppwang/deppwang.github.io.git .deploy_git
+git clone https://github.com/yuz1wan/yuz1wan.github.io.git .deploy_git
 ls -a
 
 hexo g -d
